@@ -1,18 +1,22 @@
 # gym-dart [![Build Status](https://travis-ci.org/dartsim/gym-dart.svg?branch=develop)](https://travis-ci.org/dartsim/gym-dart)
 [OpenAI Gym](https://github.com/openai/gym) environments for [DART](https://github.com/dartsim/dart) and [dartpy](https://github.com/personalrobotics/dartpy)
 
+> :warning: **Warning:** `gym-dart` is under heavy development. See the open issues on [`gym-dart`](https://github.com/dartsim/gym-dart/issues) for insight into the current state of the project. Please report any issues you encounter on the appropriate repository. We will use `develop` branch (instead of `master`) as the default branch without worrying about the commit history until the API becomes stable.
+
 ## Environments
 
+* `DartCartPole-v0`
+* `DartParticle-v0`
 * `DartReacher-v0`
 
-## Build from Source
+## Installation
 
 ### OpenAI Gym
 
 * Using `pip`
 
 ```console
-$ pip3 install gym
+$ python3 -m pip install -U gym
 ```
 
 * Build from source
@@ -20,7 +24,7 @@ $ pip3 install gym
 ```console
 $ git clone https://github.com/openai/gym
 $ cd gym
-$ pip install -e .
+$ python3 -m pip install -e .
 ```
 
 ### dartpy
@@ -37,9 +41,9 @@ $ suao apt install python3-dartpy
 ```console
 $ git clone https://github.com/dartsim/gym-dart
 $ cd gym-dart
-$ pip install -e .
+$ python3 -m pip install -e .
 ```
 
 ## License
 
-gym-dart is licensed under a BSD license. See [LICENSE](./LICENSE) for more information.
+`gym-dart` is licensed under a BSD license. See [LICENSE](./LICENSE) for more information.
